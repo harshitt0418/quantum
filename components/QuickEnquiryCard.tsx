@@ -1,9 +1,42 @@
 "use client";
 
+import { useForm } from "@/components/form-context";
 import { ArrowRight, Check, ShieldCheck } from "lucide-react";
 import Link from "next/link";
+import { useEffect, useState } from "react";
 
 export function QuickEnquiryCard() {
+  const { submitted } = useForm();
+  const [isSubmitted, setIsSubmitted] = useState(false);
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      const params = new URLSearchParams(window.location.search);
+      if (params.get("submitted") === "true") {
+        setIsSubmitted(true);
+        setTimeout(() => {
+          const el = document.getElementById("conversation");
+          if (el) {
+            el.scrollIntoView({ behavior: "smooth" });
+          }
+        }, 150);
+      }
+    }
+  }, []);
+
+  if (isSubmitted || submitted) {
+    return (
+      <div className="rounded-[20px] border border-[#E3E8F0] bg-white p-8 sm:p-12 shadow-soft text-center flex flex-col items-center justify-center min-h-[220px]">
+        <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-[#DDF5F0]">
+          <ShieldCheck className="w-7 h-7 text-[#16A34A]" />
+        </div>
+        <h3 className="mt-5 text-[20px] sm:text-[22px] font-bold text-[#0B1F3A] font-display">
+          Thank you. We will respond within 1 business day.
+        </h3>
+      </div>
+    );
+  }
+
   return (
     <div className="rounded-[20px] border border-[#E3E8F0] bg-white p-6 sm:p-8 shadow-soft">
       <span className="inline-block rounded-full bg-[#E0EAFF] px-3.5 py-1 text-[13px] font-bold uppercase tracking-wider text-[#1D4ED8]">

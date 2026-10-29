@@ -6,7 +6,7 @@ import { Check, MessageCircle } from "lucide-react";
 
 export function QuickEnquiry() {
   return (
-    <section className="bg-[#EEF4FF] py-20 mt-16">
+    <section id="conversation" className="bg-[#EEF4FF] py-20 mt-16">
       <div className="mx-auto max-w-7xl px-4 sm:px-6">
         <div className="grid lg:grid-cols-2 gap-10 lg:gap-14 items-center">
           {/* Left */}

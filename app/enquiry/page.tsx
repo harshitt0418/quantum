@@ -199,8 +199,7 @@ export default function EnquiryPage() {
       return;
     }
     console.log("Enquiry submitted:", data);
-    setIsSubmitted(true);
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    window.location.href = "/?submitted=true#conversation";
   };
 
   return (
