@@ -167,7 +167,7 @@ export default function SignatureAdvisorySuitePage() {
       desc: "Capital structuring, debt, credit, growth capital, strategic transactions and public-market readiness.",
       icon: Landmark,
       tint: "text-[#1D4ED8] bg-[#E0EAFF]",
-      href: "/#services",
+      href: "/capital-structure-debt-advisory",
     },
     {
       num: "Pillar 02",
@@ -175,7 +175,7 @@ export default function SignatureAdvisorySuitePage() {
       desc: "CFO leadership, FP&A, executive reporting, trade governance, treasury, controls and promoter finance.",
       icon: BarChart3,
       tint: "text-[#0F766E] bg-[#DDF5F0]",
-      href: "/#services",
+      href: "/cfo-governance",
     },
     {
       num: "Pillar 03",
@@ -183,7 +183,7 @@ export default function SignatureAdvisorySuitePage() {
       desc: "Industrial policy, technology incentives, employment benefits, recovery of eligible claims and government coordination.",
       icon: FileText,
       tint: "text-[#16A34A] bg-[#DCFCE7]",
-      href: "/#services",
+      href: "/government-incentives-policy-monetization",
     },
     {
       num: "Pillar 04",
@@ -191,7 +191,7 @@ export default function SignatureAdvisorySuitePage() {
       desc: "Procurement, working capital, industrial assets, energy, manufacturing transformation, R&D and product improvement.",
       icon: Settings2,
       tint: "text-[#B45309] bg-[#FFF1D6]",
-      href: "/#services",
+      href: "/operations-supply-chain-value-creation",
     },
   ];
 

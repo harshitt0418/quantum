@@ -302,10 +302,10 @@ export const footerLinks = {
     { label: "FAQ", href: "/#faq" },
   ],
   Services: [
-    { label: "Capital Structure & Debt Advisory", href: "/#services" },
-    { label: "CFO & Governance", href: "/#services" },
-    { label: "Operations & Supply Chain", href: "/#services" },
-    { label: "Government Incentives & Policy", href: "/#services" },
+    { label: "Capital Structure & Debt Advisory", href: "/capital-structure-debt-advisory" },
+    { label: "CFO & Governance", href: "/cfo-governance" },
+    { label: "Operations & Supply Chain", href: "/operations-supply-chain-value-creation" },
+    { label: "Government Incentives & Policy", href: "/government-incentives-policy-monetization" },
     { label: "Signature Advisory Suite", href: "/signature-advisory-suite" },
   ],
   Contact: [

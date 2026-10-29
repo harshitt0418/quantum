@@ -1,13 +1,18 @@
 "use client";
 
-import { useForm } from "@/components/form-context";
 import { services, signatureService, tintMap } from "@/config/site";
 import * as Icons from "lucide-react";
 import { ArrowRight, Star } from "lucide-react";
+import Link from "next/link";
+
+const serviceHrefs: Record<string, string> = {
+  "Capital Structure & Debt Advisory": "/capital-structure-debt-advisory",
+  "CFO & Governance": "/cfo-governance",
+  "Operations & Supply Chain Value Creation": "/operations-supply-chain-value-creation",
+  "Government Incentives & Policy Monetization": "/government-incentives-policy-monetization",
+};
 
 export function Services() {
-  const { openDrawer } = useForm();
-
   return (
     <section id="services" className="py-20 sm:py-28 bg-white">
       <div className="mx-auto max-w-7xl px-4 sm:px-6">
@@ -25,11 +30,12 @@ export function Services() {
           {services.map((s, i) => {
             const tint = tintMap[s.tint];
             const Icon = (Icons as any)[s.icon] as Icons.LucideIcon;
+            const href = serviceHrefs[s.title] || "/#services";
             return (
-              <div
+              <Link
                 key={s.num}
-                className={`reveal reveal-delay-${(i % 4) + 1} group rounded-[18px] border border-[#E3E8F0] bg-white p-6 sm:p-7 hover:shadow-soft hover:-translate-y-1 transition-all duration-300 cursor-pointer`}
-                onClick={() => openDrawer(s.title)}
+                href={href}
+                className={`reveal reveal-delay-${(i % 4) + 1} group block rounded-[18px] border border-[#E3E8F0] bg-white p-6 sm:p-7 hover:shadow-soft hover:-translate-y-1 transition-all duration-300 cursor-pointer`}
               >
                 <div className="flex items-start gap-4">
                   <span className={`flex h-12 w-12 shrink-0 items-center justify-center rounded-[14px] ${tint.tile}`}>
@@ -42,7 +48,9 @@ export function Services() {
                         {s.tag}
                       </span>
                     </div>
-                    <h3 className="mt-2 text-[20px] font-bold font-display text-[#0B1F3A]">{s.title}</h3>
+                    <h3 className="mt-2 text-[20px] font-bold font-display text-[#0B1F3A] group-hover:text-[#1D4ED8] transition">
+                      {s.title}
+                    </h3>
                     <p className="mt-1.5 text-[15px] text-[#4A5568] leading-relaxed">{s.desc}</p>
                     <ul className="mt-3 space-y-1">
                       {s.points.map((p) => (
@@ -52,20 +60,20 @@ export function Services() {
                         </li>
                       ))}
                     </ul>
-                    <button className="mt-4 flex items-center gap-1 text-[15px] font-semibold text-[#1D4ED8] group-hover:gap-2 transition-all">
-                      Explore <ArrowRight className="w-4 h-4" />
-                    </button>
+                    <div className="mt-4 flex items-center gap-1 text-[15px] font-semibold text-[#1D4ED8] group-hover:gap-2 transition-all">
+                      Explore Service <ArrowRight className="w-4 h-4" />
+                    </div>
                   </div>
                 </div>
-              </div>
+              </Link>
             );
           })}
         </div>
 
-        {/* Featured */}
-        <div
-          className="reveal mt-5 rounded-[18px] border border-[#1D4ED8]/20 bg-[#EEF4FF] p-6 sm:p-8 hover:shadow-soft transition cursor-pointer"
-          onClick={() => openDrawer(signatureService.title)}
+        {/* Featured - Signature Advisory Suite */}
+        <Link
+          href="/signature-advisory-suite"
+          className="reveal mt-5 block rounded-[18px] border border-[#1D4ED8]/20 bg-[#EEF4FF] p-6 sm:p-8 hover:shadow-soft transition cursor-pointer group"
         >
           <div className="flex flex-col lg:flex-row lg:items-center gap-5">
             <div className="flex items-start gap-4 flex-1">
@@ -78,8 +86,8 @@ export function Services() {
                     {signatureService.pill}
                   </span>
                 </div>
-                <h3 className="mt-2 text-[22px] font-bold font-display text-[#0B1F3A]">
-                  {signatureService.title}
+                <h3 className="mt-2 text-[22px] font-bold font-display text-[#0B1F3A] group-hover:text-[#1D4ED8] transition">
+                  {signatureService.tag}
                 </h3>
                 <p className="mt-1.5 text-[16px] text-[#4A5568] leading-relaxed max-w-2xl">
                   {signatureService.desc}
@@ -94,11 +102,11 @@ export function Services() {
                 </div>
               </div>
             </div>
-            <button className="flex items-center justify-center gap-1.5 rounded-xl bg-[#1D4ED8] px-5 py-3 text-[16px] font-semibold text-white hover:bg-[#1746B1] transition shadow-soft shrink-0 self-start lg:self-center">
-              Explore <ArrowRight className="w-4 h-4" />
-            </button>
+            <div className="flex items-center justify-center gap-1.5 rounded-xl bg-[#1D4ED8] px-5 py-3 text-[16px] font-semibold text-white group-hover:bg-[#1746B1] transition shadow-soft shrink-0 self-start lg:self-center">
+              Explore Suite <ArrowRight className="w-4 h-4" />
+            </div>
           </div>
-        </div>
+        </Link>
       </div>
     </section>
   );
