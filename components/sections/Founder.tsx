@@ -2,6 +2,7 @@
 
 import { founder } from "@/config/site";
 import { Quote, Check } from "lucide-react";
+import { ValueFrameworkFlowchart } from "@/components/ValueFrameworkFlowchart";
 
 export function Founder() {
   return (
@@ -55,6 +56,11 @@ export function Founder() {
               </p>
             </div>
           </div>
+        </div>
+
+        {/* The QAP Value Framework Flowchart */}
+        <div className="mt-16 sm:mt-24 reveal">
+          <ValueFrameworkFlowchart />
         </div>
       </div>
     </section>
