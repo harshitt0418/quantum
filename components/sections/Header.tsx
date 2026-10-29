@@ -4,6 +4,7 @@ import { useForm } from "@/components/form-context";
 import { site } from "@/config/site";
 import { Menu, X, Infinity as InfinityIcon, ArrowRight } from "lucide-react";
 import { useState, useEffect } from "react";
+import Link from "next/link";
 
 export function Header() {
   const { openModal } = useForm();
@@ -27,7 +28,7 @@ export function Header() {
       >
         <div className="mx-auto flex max-w-7xl items-center justify-between px-4 sm:px-6 py-3.5">
           {/* Logo */}
-          <a href="#top" className="flex items-center gap-2.5">
+          <Link href="/#top" className="flex items-center gap-2.5">
             <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-[#1D4ED8]">
               <InfinityIcon className="w-5 h-5 text-white" strokeWidth={2.5} />
             </span>
@@ -37,14 +38,14 @@ export function Header() {
                 Advisory Partners
               </span>
             </span>
-          </a>
+          </Link>
 
           {/* Desktop nav */}
           <nav className="hidden lg:flex items-center gap-8">
             {site.nav.map((n) => (
               <a
                 key={n.label}
-                href={n.href}
+                href={n.href.startsWith("#") ? `/${n.href}` : n.href}
                 className="text-[15px] font-medium text-[#1B2A41] hover:text-[#1D4ED8] transition"
               >
                 {n.label}
@@ -53,12 +54,12 @@ export function Header() {
           </nav>
 
           {/* Desktop CTA */}
-          <button
-            onClick={() => openModal()}
+          <Link
+            href="/enquiry"
             className="hidden lg:flex items-center gap-1.5 rounded-xl bg-[#1D4ED8] px-5 py-2.5 text-[16px] font-semibold text-white hover:bg-[#1746B1] transition shadow-soft"
           >
             Discuss Your Business <ArrowRight className="w-4 h-4" />
-          </button>
+          </Link>
 
           {/* Mobile burger */}
           <button
@@ -77,22 +78,20 @@ export function Header() {
               {site.nav.map((n) => (
                 <a
                   key={n.label}
-                  href={n.href}
+                  href={n.href.startsWith("#") ? `/${n.href}` : n.href}
                   onClick={() => setMenuOpen(false)}
                   className="rounded-lg px-3 py-3 text-[17px] font-medium text-[#1B2A41] hover:bg-[#EEF4FF] transition"
                 >
                   {n.label}
                 </a>
               ))}
-              <button
-                onClick={() => {
-                  setMenuOpen(false);
-                  openModal();
-                }}
+              <Link
+                href="/enquiry"
+                onClick={() => setMenuOpen(false)}
                 className="mt-2 flex items-center justify-center gap-1.5 rounded-xl bg-[#1D4ED8] px-5 py-3 text-[16px] font-semibold text-white"
               >
                 Discuss Your Business <ArrowRight className="w-4 h-4" />
-              </button>
+              </Link>
             </nav>
           </div>
         )}
@@ -108,12 +107,12 @@ export function Header() {
         >
           WhatsApp
         </a>
-        <button
-          onClick={() => openModal()}
+        <Link
+          href="/enquiry"
           className="flex flex-1 items-center justify-center gap-2 rounded-xl bg-[#1D4ED8] px-4 py-3 text-[16px] font-semibold text-white"
         >
           Enquire
-        </button>
+        </Link>
       </div>
     </>
   );

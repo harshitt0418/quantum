@@ -3,6 +3,7 @@
 import { useForm } from "@/components/form-context";
 import { ipoChecklist } from "@/config/site";
 import { Check, ArrowRight } from "lucide-react";
+import Link from "next/link";
 
 export function InstitutionalReadiness() {
   const { openModal } = useForm();
@@ -51,12 +52,12 @@ export function InstitutionalReadiness() {
                   </div>
                 ))}
               </div>
-              <button
-                onClick={() => openModal({ serviceInterest: "Signature Advisory Suite" })}
+              <Link
+                href="/enquiry"
                 className="mt-7 flex w-full items-center justify-center gap-1.5 rounded-xl bg-[#1D4ED8] px-6 py-3.5 text-[16px] font-semibold text-white hover:bg-[#1746B1] transition shadow-soft"
               >
                 Explore the Signature Suite <ArrowRight className="w-4 h-4" />
-              </button>
+              </Link>
             </div>
           </div>
         </div>

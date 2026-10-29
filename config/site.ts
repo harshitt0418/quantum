@@ -294,18 +294,18 @@ export const faqs = [
 
 export const footerLinks = {
   "Quick Links": [
-    { label: "Services", href: "#services" },
-    { label: "Our Approach", href: "#approach" },
-    { label: "Industries", href: "#industries" },
-    { label: "About", href: "#about" },
-    { label: "FAQ", href: "#faq" },
+    { label: "Services", href: "/#services" },
+    { label: "Our Approach", href: "/#approach" },
+    { label: "Industries", href: "/#industries" },
+    { label: "About", href: "/#about" },
+    { label: "FAQ", href: "/#faq" },
   ],
   Services: [
-    { label: "Capital Structure & Debt Advisory", href: "#services" },
-    { label: "CFO & Governance", href: "#services" },
-    { label: "Operations & Supply Chain", href: "#services" },
-    { label: "Government Incentives & Policy", href: "#services" },
-    { label: "Signature Advisory Suite", href: "#services" },
+    { label: "Capital Structure & Debt Advisory", href: "/#services" },
+    { label: "CFO & Governance", href: "/#services" },
+    { label: "Operations & Supply Chain", href: "/#services" },
+    { label: "Government Incentives & Policy", href: "/#services" },
+    { label: "Signature Advisory Suite", href: "/#services" },
   ],
   Contact: [
     { label: site.email, href: `mailto:${site.email}` },

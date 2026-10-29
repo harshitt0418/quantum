@@ -70,12 +70,9 @@ export function FormProvider({ children }: { children: React.ReactNode }) {
   }, []);
 
   const openModal = useCallback((preset?: Partial<FormValues>) => {
-    setMode("modal");
-    if (preset) {
-      setPresetValues(preset);
-      setValues((prev) => ({ ...prev, ...preset } as FormValues));
+    if (typeof window !== "undefined") {
+      window.location.href = "/enquiry";
     }
-    setIsModalOpen(true);
   }, []);
 
   const closeModal = useCallback(() => setIsModalOpen(false), []);

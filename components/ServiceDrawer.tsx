@@ -3,6 +3,7 @@
 import { useForm } from "@/components/form-context";
 import { services, signatureService } from "@/config/site";
 import { X, ArrowRight, Check } from "lucide-react";
+import Link from "next/link";
 import { useEffect } from "react";
 
 export function ServiceDrawer() {
@@ -60,16 +61,13 @@ export function ServiceDrawer() {
             ))}
           </div>
 
-          <button
-            type="button"
-            onClick={() => {
-              closeDrawer();
-              openModal({ serviceInterest: svc.title });
-            }}
+          <Link
+            href="/enquiry"
+            onClick={() => closeDrawer()}
             className="mt-8 flex w-full items-center justify-center gap-2 rounded-xl bg-[#1D4ED8] px-6 py-3.5 text-[16px] font-semibold text-white hover:bg-[#1746B1] transition shadow-soft sm:w-auto"
           >
             Enquire about this service <ArrowRight className="w-4 h-4" />
-          </button>
+          </Link>
         </div>
       </div>
     </div>

@@ -4,6 +4,7 @@ import { useForm } from "@/components/form-context";
 import { approachSteps } from "@/config/site";
 import * as Icons from "lucide-react";
 import { ArrowRight } from "lucide-react";
+import Link from "next/link";
 
 export function Approach() {
   const { openModal } = useForm();
@@ -44,12 +45,12 @@ export function Approach() {
         </div>
 
         <div className="mt-12 text-center">
-          <button
-            onClick={() => openModal()}
+          <Link
+            href="/enquiry"
             className="inline-flex items-center gap-1.5 rounded-xl bg-[#1D4ED8] px-6 py-3.5 text-[16px] font-semibold text-white hover:bg-[#1746B1] transition shadow-soft"
           >
             Start with a business conversation <ArrowRight className="w-4 h-4" />
-          </button>
+          </Link>
         </div>
       </div>
     </section>

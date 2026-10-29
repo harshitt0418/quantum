@@ -3,6 +3,7 @@
 import { useForm } from "@/components/form-context";
 import { heroTicks } from "@/config/site";
 import { ArrowRight, Check, TrendingUp, TrendingDown } from "lucide-react";
+import Link from "next/link";
 
 export function Hero() {
   const { openModal } = useForm();
@@ -43,12 +44,12 @@ export function Hero() {
 
             {/* Buttons */}
             <div className="mt-7 flex flex-col sm:flex-row gap-3">
-              <button
-                onClick={() => openModal()}
+              <Link
+                href="/enquiry"
                 className="flex items-center justify-center gap-1.5 rounded-xl bg-[#1D4ED8] px-6 py-3.5 text-[16px] font-semibold text-white hover:bg-[#1746B1] transition shadow-soft"
               >
                 Discuss Your Business <ArrowRight className="w-4 h-4" />
-              </button>
+              </Link>
               <a
                 href="#services"
                 className="flex items-center justify-center gap-1.5 rounded-xl border border-[#0B1F3A] px-6 py-3.5 text-[16px] font-semibold text-[#0B1F3A] hover:bg-[#0B1F3A] hover:text-white transition"

@@ -1,68 +1,48 @@
 "use client";
 
-import { useForm } from "@/components/form-context";
-import { Field, formFields } from "@/components/Field";
-import { ArrowRight, ShieldCheck } from "lucide-react";
+import { ArrowRight, Check, ShieldCheck } from "lucide-react";
+import Link from "next/link";
 
 export function QuickEnquiryCard() {
-  const { validateQuick, setSubmitted, submitted, openModal, values } = useForm();
-  const quickFields = formFields.filter((f) => f.quick);
-
-  const submit = () => {
-    if (!validateQuick()) return;
-    console.log("Quick enquiry submitted:", values);
-    setSubmitted(true);
-  };
-
-  if (submitted) {
-    return (
-      <div className="rounded-[20px] border border-[#E3E8F0] bg-white p-8 shadow-soft text-center">
-        <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-[#DDF5F0]">
-          <ShieldCheck className="w-7 h-7 text-[#16A34A]" />
-        </div>
-        <h3 className="mt-4 text-[22px] font-bold text-[#0B1F3A] font-display">
-          Thank you. We will respond within 1 business day.
-        </h3>
-      </div>
-    );
-  }
-
   return (
     <div className="rounded-[20px] border border-[#E3E8F0] bg-white p-6 sm:p-8 shadow-soft">
-      <h3 className="text-[22px] font-bold font-display text-[#0B1F3A]">
+      <span className="inline-block rounded-full bg-[#E0EAFF] px-3.5 py-1 text-[13px] font-bold uppercase tracking-wider text-[#1D4ED8]">
+        Prospective Client Enquiry
+      </span>
+      <h3 className="mt-3 text-[22px] font-bold font-display text-[#0B1F3A]">
         Discuss your business
       </h3>
-      <p className="mt-1 text-[15px] text-[#4A5568]">
-        Share a few details and we'll take it from there.
+      <p className="mt-2 text-[15px] text-[#4A5568] leading-relaxed">
+        Tell us a little about your business and the challenges you want to address. Our team will review your requirements and determine how QAP may be able to help.
       </p>
 
-      <div className="mt-5 space-y-4">
-        {quickFields.map((f) => (
-          <Field key={f.name} field={f} />
-        ))}
+      <div className="mt-6 space-y-3">
+        <div className="flex items-center gap-2.5 text-[15px] text-[#1B2A41]">
+          <span className="flex h-5 w-5 items-center justify-center rounded-full bg-[#DDF5F0]">
+            <Check className="w-3.5 h-3.5 text-[#16A34A]" />
+          </span>
+          <span>Approx. 3–5 minutes</span>
+        </div>
+        <div className="flex items-center gap-2.5 text-[15px] text-[#1B2A41]">
+          <span className="flex h-5 w-5 items-center justify-center rounded-full bg-[#DDF5F0]">
+            <Check className="w-3.5 h-3.5 text-[#16A34A]" />
+          </span>
+          <span>Your information is treated confidentially</span>
+        </div>
+        <div className="flex items-center gap-2.5 text-[15px] text-[#1B2A41]">
+          <span className="flex h-5 w-5 items-center justify-center rounded-full bg-[#DDF5F0]">
+            <Check className="w-3.5 h-3.5 text-[#16A34A]" />
+          </span>
+          <span>Response within 1 business day</span>
+        </div>
       </div>
 
-      <button
-        type="button"
-        onClick={submit}
-        className="mt-5 flex w-full items-center justify-center gap-2 rounded-xl bg-[#1D4ED8] px-6 py-3.5 text-[16px] font-semibold text-white hover:bg-[#1746B1] transition shadow-soft"
+      <Link
+        href="/enquiry"
+        className="mt-8 flex w-full items-center justify-center gap-2 rounded-xl bg-[#1D4ED8] px-6 py-3.5 text-[16px] font-semibold text-white hover:bg-[#1746B1] transition shadow-soft"
       >
-        Submit Enquiry <ArrowRight className="w-4 h-4" />
-      </button>
-
-      <p className="mt-3 text-center text-[13px] text-[#94A3B8]">
-        Your information is confidential.
-      </p>
-
-      <div className="mt-4 border-t border-[#E3E8F0] pt-4">
-        <button
-          type="button"
-          onClick={() => openModal(values)}
-          className="text-[15px] font-semibold text-[#1D4ED8] hover:underline"
-        >
-          Prefer to share more details? Open the full enquiry form →
-        </button>
-      </div>
+        Open Enquiry Form <ArrowRight className="w-4 h-4" />
+      </Link>
     </div>
   );
 }
