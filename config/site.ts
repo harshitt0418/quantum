@@ -1,7 +1,7 @@
 export const site = {
   name: "Quantum Advisory Partners",
   shortName: "QAP",
-  tagline: "Strategic Finance · Performance · Value Creation",
+  tagline: "Strategy · Performance · Value Creation",
   email: "contact@quantumadvisorypartners.in",
   whatsappNumber: "919996307143",
   whatsappDisplay: "+91 99963 07143",
@@ -308,6 +308,7 @@ export const footerLinks = {
     { label: "Signature Advisory Suite", href: "/#services" },
   ],
   Contact: [
+    { label: "Founder and Principal- Alok Verma", href: "/#about" },
     { label: site.email, href: `mailto:${site.email}` },
     { label: site.whatsappDisplay, href: site.whatsappLink },
   ],

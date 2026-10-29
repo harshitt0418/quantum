@@ -18,7 +18,7 @@ const jakarta = Plus_Jakarta_Sans({
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://quantumadvisorypartners.in'),
-  title: 'Quantum Advisory Partners | Strategic Finance & Business Advisory',
+  title: 'Quantum Advisory Partners | Strategy & Business Advisory',
   description:
     'Quantum Advisory Partners helps Indian businesses identify opportunities, improve financial performance, strengthen capital decisions and build the operating discipline needed for sustainable growth.',
   keywords: [
@@ -26,13 +26,13 @@ export const metadata: Metadata = {
     'CFO advisory',
     'capital structure advisory',
     'IPO readiness',
-    'strategic finance',
+    'strategy',
     'working capital',
   ],
   openGraph: {
-    title: 'Quantum Advisory Partners | Strategic Finance & Business Advisory',
+    title: 'Quantum Advisory Partners | Strategy & Business Advisory',
     description:
-      'Build a better business. Build a more valuable business. Strategic finance, performance improvement, capital decisions and institutional readiness for growing Indian businesses.',
+      'Build a better business. Build a more valuable business. Strategy, performance improvement, capital decisions and institutional readiness for growing Indian businesses.',
     type: 'website',
     siteName: 'Quantum Advisory Partners',
   },
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Quantum Advisory Partners',
     description:
-      'Strategic finance, performance improvement, capital decisions and institutional readiness for growing Indian businesses.',
+      'Strategy, performance improvement, capital decisions and institutional readiness for growing Indian businesses.',
   },
 };
 

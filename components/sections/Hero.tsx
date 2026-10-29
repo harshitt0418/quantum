@@ -15,7 +15,7 @@ export function Hero() {
           {/* Left */}
           <div className="reveal">
             <span className="inline-block rounded-full border border-[#E3E8F0] bg-white px-4 py-1.5 text-[13px] font-semibold uppercase tracking-wide text-[#1D4ED8]">
-              Strategic Finance · Performance · Value Creation
+              Strategy · Performance · Value Creation
             </span>
             <h1 className="mt-5 font-display text-[44px] sm:text-[64px] font-extrabold leading-[1.1] text-[#0B1F3A] text-balance">
               Build better, create{" "}

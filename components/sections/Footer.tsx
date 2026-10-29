@@ -8,7 +8,7 @@ export function Footer() {
     <footer className="bg-[#0B1F3A] text-white">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 py-16">
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
-          {/* Logo + blurb */}
+          {/* Logo + blurb + Founder info */}
           <div>
             <div className="flex items-center gap-2.5">
               <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-[#1D4ED8]">
@@ -22,8 +22,11 @@ export function Footer() {
               </span>
             </div>
             <p className="mt-4 text-[14px] leading-relaxed text-white/60 max-w-xs">
-              Strategic finance, performance improvement, capital decisions and
+              Strategy, performance improvement, capital decisions and
               institutional readiness for growing Indian businesses.
+            </p>
+            <p className="mt-4 text-[14px] font-semibold text-white/80">
+              Founder and Principal- Alok Verma
             </p>
           </div>
 
@@ -62,7 +65,7 @@ export function Footer() {
         {/* Legal */}
         <div className="mt-8 flex flex-col sm:flex-row items-center justify-between gap-4 pt-6 border-t border-white/10">
           <p className="text-[13px] text-white/40">
-            © {new Date().getFullYear()} Quantum Advisory Partners. All rights reserved.
+            © {new Date().getFullYear()} Quantum Advisory Partners. All rights reserved. · Founder and Principal- Alok Verma
           </p>
           <div className="flex gap-6">
             <a href="#" className="text-[13px] text-white/60 hover:text-white transition">
