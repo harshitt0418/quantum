@@ -53,7 +53,7 @@ export function InstitutionalReadiness() {
                 ))}
               </div>
               <Link
-                href="/enquiry"
+                href="/signature-advisory-suite"
                 className="mt-7 flex w-full items-center justify-center gap-1.5 rounded-xl bg-[#1D4ED8] px-6 py-3.5 text-[16px] font-semibold text-white hover:bg-[#1746B1] transition shadow-soft"
               >
                 Explore the Signature Suite <ArrowRight className="w-4 h-4" />

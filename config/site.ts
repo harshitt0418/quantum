@@ -11,6 +11,7 @@ export const site = {
     "https://wa.me/919996307143?text=Hello%20Quantum%20Advisory%20Partners%2C%20I%20would%20like%20to%20discuss%20my%20business.",
   nav: [
     { label: "Services", href: "#services" },
+    { label: "Signature Advisory Suite", href: "/signature-advisory-suite" },
     { label: "Approach", href: "#approach" },
     { label: "Industries", href: "#industries" },
     { label: "About", href: "#about" },
@@ -305,7 +306,7 @@ export const footerLinks = {
     { label: "CFO & Governance", href: "/#services" },
     { label: "Operations & Supply Chain", href: "/#services" },
     { label: "Government Incentives & Policy", href: "/#services" },
-    { label: "Signature Advisory Suite", href: "/#services" },
+    { label: "Signature Advisory Suite", href: "/signature-advisory-suite" },
   ],
   Contact: [
     { label: "Founder and Principal- Alok Verma", href: "/#about" },

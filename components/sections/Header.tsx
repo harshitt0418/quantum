@@ -41,7 +41,7 @@ export function Header() {
           </Link>
 
           {/* Desktop nav */}
-          <nav className="hidden lg:flex items-center gap-8">
+          <nav className="hidden lg:flex items-center gap-5 xl:gap-8">
             {site.nav.map((n) => (
               <a
                 key={n.label}
