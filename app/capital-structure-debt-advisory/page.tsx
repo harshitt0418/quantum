@@ -45,13 +45,13 @@ export default function CapitalStructureDebtAdvisoryPage() {
       title: "Government Incentives & Policy Monetization",
       desc: "Evaluate potentially relevant incentives that may affect project economics or capital requirements.",
       href: "/government-incentives-policy-monetization",
-      tag: "Pillar 03",
+      tag: "Pillar 04",
     },
     {
       title: "Operations & Supply Chain Value Creation",
       desc: "Connect working-capital efficiency, inventory reduction and operational cash generation.",
       href: "/operations-supply-chain-value-creation",
-      tag: "Pillar 04",
+      tag: "Pillar 03",
     },
     {
       title: "Signature Advisory Suite",

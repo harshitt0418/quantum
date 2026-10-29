@@ -74,13 +74,13 @@ export default function CFOGovernancePage() {
       title: "Government Incentives & Policy Monetization",
       desc: "Embed incentive tracking into FP&A, cash-flow management, MIS and governance.",
       href: "/government-incentives-policy-monetization",
-      tag: "Pillar 03",
+      tag: "Pillar 04",
     },
     {
       title: "Operations & Supply Chain Value Creation",
       desc: "Convert operating data into management reporting, planning and decision support.",
       href: "/operations-supply-chain-value-creation",
-      tag: "Pillar 04",
+      tag: "Pillar 03",
     },
     {
       title: "Signature Advisory Suite",

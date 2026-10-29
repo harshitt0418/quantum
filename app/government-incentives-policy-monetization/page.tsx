@@ -21,11 +21,11 @@ import Link from "next/link";
 
 export default function GovernmentIncentivesPage() {
   const subNav = [
-    { label: "3.1 Incentive Discovery", href: "#incentive-discovery" },
-    { label: "3.2 Investment & Capital", href: "#investment-incentives" },
-    { label: "3.3 Tax, Export & Operating", href: "#tax-export" },
-    { label: "3.4 Policy Monetization", href: "#policy-monetization" },
-    { label: "3.5 Claims & Compliance", href: "#claims-compliance" },
+    { label: "4.1 Incentive Discovery", href: "#incentive-discovery" },
+    { label: "4.2 Investment & Capital", href: "#investment-incentives" },
+    { label: "4.3 Tax, Export & Operating", href: "#tax-export" },
+    { label: "4.4 Policy Monetization", href: "#policy-monetization" },
+    { label: "4.5 Claims & Compliance", href: "#claims-compliance" },
   ];
 
   const incentiveStack = [
@@ -80,7 +80,7 @@ export default function GovernmentIncentivesPage() {
       title: "Operations & Supply Chain Value Creation",
       desc: "Connect policy-linked technology, power and infrastructure incentives with operational plans.",
       href: "/operations-supply-chain-value-creation",
-      tag: "Pillar 04",
+      tag: "Pillar 03",
     },
     {
       title: "Signature Advisory Suite",
@@ -109,7 +109,7 @@ export default function GovernmentIncentivesPage() {
 
                 <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-[#16A34A]/20 bg-[#DCFCE7] text-[#16A34A] text-[12px] font-bold uppercase tracking-wider mb-6">
                   <span className="w-2 h-2 rounded-full bg-[#16A34A]" />
-                  Pillar 03 · Policy Monetization
+                  Pillar 04 · Policy Monetization
                 </div>
 
                 <h1 className="font-display text-[36px] sm:text-[54px] lg:text-[64px] font-extrabold tracking-tight leading-[1.08] text-[#0B1F3A]">
@@ -210,16 +210,14 @@ export default function GovernmentIncentivesPage() {
 
           {/* MODULES */}
           
-          {/* Module 3.1 */}
+          {/* Module 4.1 */}
           <section id="incentive-discovery" className="py-16 sm:py-24 border-t border-[#E3E8F0] bg-white">
             <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
               {/* Module Header */}
               <div className="grid lg:grid-cols-12 gap-8 items-start">
                 <div className="lg:col-span-8">
                   <div className="flex items-center gap-3">
-                    <span className="flex h-7 w-7 items-center justify-center rounded-lg bg-[#DCFCE7] font-display font-bold text-[#16A34A] text-[12px]">
-                      3.1
-                    </span>
+                    <span className="flex h-7 w-7 items-center justify-center rounded-lg bg-[#DCFCE7] font-display font-bold text-[#16A34A] text-[12px]">4.1</span>
                     <span className="text-[12px] font-bold uppercase tracking-wider text-[#64748B]">
                       Incentive Discovery & Eligibility
                     </span>
@@ -423,16 +421,14 @@ export default function GovernmentIncentivesPage() {
           </section>
   
 
-          {/* Module 3.2 */}
+          {/* Module 4.2 */}
           <section id="investment-incentives" className="py-16 sm:py-24 border-t border-[#E3E8F0] bg-[#F8FAFC]">
             <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
               {/* Module Header */}
               <div className="grid lg:grid-cols-12 gap-8 items-start">
                 <div className="lg:col-span-8">
                   <div className="flex items-center gap-3">
-                    <span className="flex h-7 w-7 items-center justify-center rounded-lg bg-[#DCFCE7] font-display font-bold text-[#16A34A] text-[12px]">
-                      3.2
-                    </span>
+                    <span className="flex h-7 w-7 items-center justify-center rounded-lg bg-[#DCFCE7] font-display font-bold text-[#16A34A] text-[12px]">4.2</span>
                     <span className="text-[12px] font-bold uppercase tracking-wider text-[#64748B]">
                       Investment & Capital Incentives
                     </span>
@@ -636,16 +632,14 @@ export default function GovernmentIncentivesPage() {
           </section>
   
 
-          {/* Module 3.3 */}
+          {/* Module 4.3 */}
           <section id="tax-export" className="py-16 sm:py-24 border-t border-[#E3E8F0] bg-white">
             <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
               {/* Module Header */}
               <div className="grid lg:grid-cols-12 gap-8 items-start">
                 <div className="lg:col-span-8">
                   <div className="flex items-center gap-3">
-                    <span className="flex h-7 w-7 items-center justify-center rounded-lg bg-[#DCFCE7] font-display font-bold text-[#16A34A] text-[12px]">
-                      3.3
-                    </span>
+                    <span className="flex h-7 w-7 items-center justify-center rounded-lg bg-[#DCFCE7] font-display font-bold text-[#16A34A] text-[12px]">4.3</span>
                     <span className="text-[12px] font-bold uppercase tracking-wider text-[#64748B]">
                       Tax, Export & Operating Benefits
                     </span>
@@ -849,16 +843,14 @@ export default function GovernmentIncentivesPage() {
           </section>
   
 
-          {/* Module 3.4 */}
+          {/* Module 4.4 */}
           <section id="policy-monetization" className="py-16 sm:py-24 border-t border-[#E3E8F0] bg-[#F8FAFC]">
             <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
               {/* Module Header */}
               <div className="grid lg:grid-cols-12 gap-8 items-start">
                 <div className="lg:col-span-8">
                   <div className="flex items-center gap-3">
-                    <span className="flex h-7 w-7 items-center justify-center rounded-lg bg-[#DCFCE7] font-display font-bold text-[#16A34A] text-[12px]">
-                      3.4
-                    </span>
+                    <span className="flex h-7 w-7 items-center justify-center rounded-lg bg-[#DCFCE7] font-display font-bold text-[#16A34A] text-[12px]">4.4</span>
                     <span className="text-[12px] font-bold uppercase tracking-wider text-[#64748B]">
                       Policy Monetization & Execution
                     </span>
@@ -1062,16 +1054,14 @@ export default function GovernmentIncentivesPage() {
           </section>
   
 
-          {/* Module 3.5 */}
+          {/* Module 4.5 */}
           <section id="claims-compliance" className="py-16 sm:py-24 border-t border-[#E3E8F0] bg-white">
             <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
               {/* Module Header */}
               <div className="grid lg:grid-cols-12 gap-8 items-start">
                 <div className="lg:col-span-8">
                   <div className="flex items-center gap-3">
-                    <span className="flex h-7 w-7 items-center justify-center rounded-lg bg-[#DCFCE7] font-display font-bold text-[#16A34A] text-[12px]">
-                      3.5
-                    </span>
+                    <span className="flex h-7 w-7 items-center justify-center rounded-lg bg-[#DCFCE7] font-display font-bold text-[#16A34A] text-[12px]">4.5</span>
                     <span className="text-[12px] font-bold uppercase tracking-wider text-[#64748B]">
                       Claims, Documentation & Compliance
                     </span>

@@ -178,7 +178,7 @@ export default function SignatureAdvisorySuitePage() {
       href: "/cfo-governance",
     },
     {
-      num: "Pillar 03",
+      num: "Pillar 04",
       title: "Government Incentives & Policy Monetization",
       desc: "Industrial policy, technology incentives, employment benefits, recovery of eligible claims and government coordination.",
       icon: FileText,
@@ -186,7 +186,7 @@ export default function SignatureAdvisorySuitePage() {
       href: "/government-incentives-policy-monetization",
     },
     {
-      num: "Pillar 04",
+      num: "Pillar 03",
       title: "Operations & Supply Chain Value Creation",
       desc: "Procurement, working capital, industrial assets, energy, manufacturing transformation, R&D and product improvement.",
       icon: Settings2,

@@ -20,11 +20,11 @@ import Link from "next/link";
 
 export default function OperationsSupplyChainPage() {
   const subNav = [
-    { label: "4.1 Operating Model", href: "#operating-model" },
-    { label: "4.2 Procurement & Cost", href: "#procurement" },
-    { label: "4.3 Working Capital & Logistics", href: "#working-capital" },
-    { label: "4.4 Capacity & Efficiency", href: "#efficiency" },
-    { label: "4.5 Transformation Execution", href: "#performance" },
+    { label: "3.1 Operating Model", href: "#operating-model" },
+    { label: "3.2 Procurement & Cost", href: "#procurement" },
+    { label: "3.3 Working Capital & Logistics", href: "#working-capital" },
+    { label: "3.4 Capacity & Efficiency", href: "#efficiency" },
+    { label: "3.5 Transformation Execution", href: "#performance" },
   ];
 
   const operatingModelStack = [
@@ -79,7 +79,7 @@ export default function OperationsSupplyChainPage() {
       title: "Government Incentives & Policy Monetization",
       desc: "Assess policy-linked opportunities that may support investment and operating economics.",
       href: "/government-incentives-policy-monetization",
-      tag: "Pillar 03",
+      tag: "Pillar 04",
     },
     {
       title: "Signature Advisory Suite",
@@ -108,7 +108,7 @@ export default function OperationsSupplyChainPage() {
 
                 <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-[#B45309]/20 bg-[#FFF1D6] text-[#B45309] text-[12px] font-bold uppercase tracking-wider mb-6">
                   <span className="w-2 h-2 rounded-full bg-[#B45309]" />
-                  Pillar 04 · Operational Excellence
+                  Pillar 03 · Operational Excellence
                 </div>
 
                 <h1 className="font-display text-[36px] sm:text-[54px] lg:text-[64px] font-extrabold tracking-tight leading-[1.08] text-[#0B1F3A]">
@@ -209,16 +209,14 @@ export default function OperationsSupplyChainPage() {
 
           {/* MODULES */}
           
-          {/* Module 4.1 */}
+          {/* Module 3.1 */}
           <section id="operating-model" className="py-16 sm:py-24 border-t border-[#E3E8F0] bg-white">
             <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
               {/* Module Header */}
               <div className="grid lg:grid-cols-12 gap-8 items-start">
                 <div className="lg:col-span-8">
                   <div className="flex items-center gap-3">
-                    <span className="flex h-7 w-7 items-center justify-center rounded-lg bg-[#FFF1D6] font-display font-bold text-[#B45309] text-[12px]">
-                      4.1
-                    </span>
+                    <span className="flex h-7 w-7 items-center justify-center rounded-lg bg-[#FFF1D6] font-display font-bold text-[#B45309] text-[12px]">3.1</span>
                     <span className="text-[12px] font-bold uppercase tracking-wider text-[#64748B]">
                       Operating Model & Supply Chain Diagnostic
                     </span>
@@ -419,16 +417,14 @@ export default function OperationsSupplyChainPage() {
           </section>
   
 
-          {/* Module 4.2 */}
+          {/* Module 3.2 */}
           <section id="procurement" className="py-16 sm:py-24 border-t border-[#E3E8F0] bg-[#F8FAFC]">
             <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
               {/* Module Header */}
               <div className="grid lg:grid-cols-12 gap-8 items-start">
                 <div className="lg:col-span-8">
                   <div className="flex items-center gap-3">
-                    <span className="flex h-7 w-7 items-center justify-center rounded-lg bg-[#FFF1D6] font-display font-bold text-[#B45309] text-[12px]">
-                      4.2
-                    </span>
+                    <span className="flex h-7 w-7 items-center justify-center rounded-lg bg-[#FFF1D6] font-display font-bold text-[#B45309] text-[12px]">3.2</span>
                     <span className="text-[12px] font-bold uppercase tracking-wider text-[#64748B]">
                       Procurement & Cost Optimization
                     </span>
@@ -629,16 +625,14 @@ export default function OperationsSupplyChainPage() {
           </section>
   
 
-          {/* Module 4.3 */}
+          {/* Module 3.3 */}
           <section id="working-capital" className="py-16 sm:py-24 border-t border-[#E3E8F0] bg-white">
             <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
               {/* Module Header */}
               <div className="grid lg:grid-cols-12 gap-8 items-start">
                 <div className="lg:col-span-8">
                   <div className="flex items-center gap-3">
-                    <span className="flex h-7 w-7 items-center justify-center rounded-lg bg-[#FFF1D6] font-display font-bold text-[#B45309] text-[12px]">
-                      4.3
-                    </span>
+                    <span className="flex h-7 w-7 items-center justify-center rounded-lg bg-[#FFF1D6] font-display font-bold text-[#B45309] text-[12px]">3.3</span>
                     <span className="text-[12px] font-bold uppercase tracking-wider text-[#64748B]">
                       Inventory, Working Capital & Logistics
                     </span>
@@ -839,16 +833,14 @@ export default function OperationsSupplyChainPage() {
           </section>
   
 
-          {/* Module 4.4 */}
+          {/* Module 3.4 */}
           <section id="efficiency" className="py-16 sm:py-24 border-t border-[#E3E8F0] bg-[#F8FAFC]">
             <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
               {/* Module Header */}
               <div className="grid lg:grid-cols-12 gap-8 items-start">
                 <div className="lg:col-span-8">
                   <div className="flex items-center gap-3">
-                    <span className="flex h-7 w-7 items-center justify-center rounded-lg bg-[#FFF1D6] font-display font-bold text-[#B45309] text-[12px]">
-                      4.4
-                    </span>
+                    <span className="flex h-7 w-7 items-center justify-center rounded-lg bg-[#FFF1D6] font-display font-bold text-[#B45309] text-[12px]">3.4</span>
                     <span className="text-[12px] font-bold uppercase tracking-wider text-[#64748B]">
                       Production, Capacity & Process Efficiency
                     </span>
@@ -1049,16 +1041,14 @@ export default function OperationsSupplyChainPage() {
           </section>
   
 
-          {/* Module 4.5 */}
+          {/* Module 3.5 */}
           <section id="performance" className="py-16 sm:py-24 border-t border-[#E3E8F0] bg-white">
             <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
               {/* Module Header */}
               <div className="grid lg:grid-cols-12 gap-8 items-start">
                 <div className="lg:col-span-8">
                   <div className="flex items-center gap-3">
-                    <span className="flex h-7 w-7 items-center justify-center rounded-lg bg-[#FFF1D6] font-display font-bold text-[#B45309] text-[12px]">
-                      4.5
-                    </span>
+                    <span className="flex h-7 w-7 items-center justify-center rounded-lg bg-[#FFF1D6] font-display font-bold text-[#B45309] text-[12px]">3.5</span>
                     <span className="text-[12px] font-bold uppercase tracking-wider text-[#64748B]">
                       Performance Management & Transformation Execution
                     </span>
