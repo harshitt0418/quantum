@@ -93,7 +93,7 @@ export const services = [
   {
     num: "02",
     tag: "Finance",
-    title: "Fractional CFO & Governance",
+    title: "CFO & Governance",
     desc: "Strengthen budgeting, forecasting, cash visibility, management reporting and the financial discipline required to support growth.",
     points: ["Budgeting & forecasting", "Cash visibility", "MIS & reporting"],
     icon: "BarChart3",
@@ -264,7 +264,7 @@ export const faqs = [
   },
   {
     q: "What is your engagement model?",
-    a: "Engagements begin with a business conversation to understand the issue, followed by a scoped diagnostic or advisory engagement. Work may be project-based or a retained Fractional CFO arrangement, depending on the need.",
+    a: "Engagements begin with a business conversation to understand the issue, followed by a scoped diagnostic or advisory engagement. Work may be project-based or a retained CFO arrangement, depending on the need.",
   },
   {
     q: "How do you approach fees?",
@@ -272,7 +272,7 @@ export const faqs = [
   },
   {
     q: "What timelines should I expect?",
-    a: "A typical diagnostic runs a few weeks; deeper advisory engagements span several weeks to months. Fractional CFO arrangements are ongoing and reviewed on a retainer basis. We respond to new enquiries within one business day.",
+    a: "A typical diagnostic runs a few weeks; deeper advisory engagements span several weeks to months. CFO arrangements are ongoing and reviewed on a retainer basis. We respond to new enquiries within one business day.",
   },
   {
     q: "Is my information kept confidential?",
@@ -302,7 +302,7 @@ export const footerLinks = {
   ],
   Services: [
     { label: "Capital Structure & Debt Advisory", href: "#services" },
-    { label: "Fractional CFO & Governance", href: "#services" },
+    { label: "CFO & Governance", href: "#services" },
     { label: "Operations & Supply Chain", href: "#services" },
     { label: "Government Incentives & Policy", href: "#services" },
     { label: "Signature Advisory Suite", href: "#services" },
@@ -318,7 +318,7 @@ export const disclaimer =
 
 export const serviceOptions = [
   "Capital Structure & Debt Advisory",
-  "Fractional CFO & Governance",
+  "CFO & Governance",
   "Operations & Supply Chain",
   "Government Incentives & Policy",
   "Signature Advisory Suite",

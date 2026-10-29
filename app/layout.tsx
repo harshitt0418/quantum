@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     'Quantum Advisory Partners helps Indian businesses identify opportunities, improve financial performance, strengthen capital decisions and build the operating discipline needed for sustainable growth.',
   keywords: [
     'business advisory India',
-    'fractional CFO',
+    'CFO advisory',
     'capital structure advisory',
     'IPO readiness',
     'strategic finance',
