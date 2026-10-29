@@ -17,9 +17,9 @@ export function Hero() {
               Strategic Finance · Performance · Value Creation
             </span>
             <h1 className="mt-5 font-display text-[44px] sm:text-[64px] font-extrabold leading-[1.1] text-[#0B1F3A] text-balance">
-              Build a better business. Build a{" "}
+              Build better, create{" "}
               <span className="relative inline-block text-[#1D4ED8]">
-                more valuable
+                more value
                 <svg
                   className="absolute -bottom-2 left-0 w-full"
                   viewBox="0 0 200 12"
@@ -33,8 +33,7 @@ export function Hero() {
                     strokeLinecap="round"
                   />
                 </svg>
-              </span>{" "}
-              business.
+              </span>
             </h1>
             <p className="mt-6 text-[17px] sm:text-[18px] leading-[1.7] text-[#4A5568] prose-measure">
               Quantum Advisory Partners helps businesses identify opportunities,
